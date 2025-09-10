@@ -1,0 +1,246 @@
+/* 
+#E81C2E  
+#202C45
+*/
+body{
+    padding: 0;
+    margin: 0;
+}
+.auto-title{
+    /* 1rem 16x2 */
+font-size: 3.5rem;
+text-align: center;
+color:#202C45 ;
+line-height: 0;
+font-weight: 800;
+
+}
+
+.auto-title span{
+    color: #E81C2E;
+}
+
+
+.top .elements{
+    display: none;
+}
+
+.btm-nav{
+    background-color: #202C45;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+
+.menu-icon{
+    font-size: 20px;
+    padding: 15px 20px;
+    background-color: white;
+    color: #202C45;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: inset 0 0 0 0 #202C45;;
+}
+
+.btm-nav .links p{
+    /* display: none; */
+    font-size: 1.4rem;
+}
+.btm-nav .links div{
+    display: none;
+}
+
+.appointmt-btn{
+    display: none;
+}
+
+
+/* Tablet designs  */
+@media screen and (min-width:768px) {
+    /* header{
+        background: #000;
+    } */
+    .top{
+        display: flex;
+        justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    }
+    .auto-title{
+        text-align: left;
+    }
+
+    .top .elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.top .elements img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-right: 10px;
+    padding: 10px;
+    background-color:#202C45 ;
+}
+
+.top .elements div .text{
+    color: #202C45;
+    font-weight: 600 ;
+    font-size: 1.1rem;
+    line-height: 0;
+
+}
+.top .elements div .sub{
+    color: #202C45;
+    font-weight: 400 ;
+    font-size: .8rem;
+}
+
+/* Second nav Strted */
+
+.btm-nav .links p{
+    display: none;
+}
+
+.btm-nav .links div{
+    display: block;
+}
+
+
+.btm-nav .links div a {
+    text-decoration: none;
+    color: white;
+    margin-right: 2rem;
+
+}
+
+
+.btm-nav .links div a:hover
+/* .btm-nav .links div a:nth-child(1) */
+
+{
+    color: #E81C2E;
+    transition: all 2s;
+}
+
+
+.menu-icon{
+    display: none;
+}
+
+.appointmt-btn{
+    padding: 15px 20px;
+    background-color: white;
+    color: #202C45;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: inset 0 0 0 0 #202C45;
+}
+
+.appointmt-btn:hover{
+    background-color: #E81C2E;
+    color: white;
+    transition: all 1s ease-out;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #E81C2E;
+}
+
+.appointmt-btn{
+    display: block;
+}
+
+}
+
+
+
+
+/*--LESSON --*/
+@keyframes animate{
+    0%{
+        background-color: #202C45;
+        background-image: url('/images/carousel-1.jpg');
+    }
+    20%{
+        background-color: yellow;
+        background-image: url('/images/about.jpg');
+    }
+    50%{
+        background-color: black;
+        background-image: url('/images/post-4.jpg');
+    }
+    100%{
+        background-color: blue;
+    }
+}
+
+.box{
+    /* width: 100px; */
+    height: 100vh;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-size: cover; */
+
+    transition: transform 1s ease-out ;
+    animation-name: animate;
+    /* animation-timing-function: 1s; */
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+
+    animation: animate 4s ease-in 1s iteration-count direction fill-mode;
+    
+    
+}
+
+.box:hover{
+    cursor: pointer;
+    /* transform: rotate(-50deg); */
+    /* transform: scale(1.7); */
+    /* transform: skew(-50deg); */
+    /* transform: translateY(50px ,50px); */
+
+    /* 2D transformation */
+    /* transform: rotate(50deg) translate(50px); */
+    /* transform:  translate(50px) rotate(50deg); */
+
+    /* transform: perspective(200px) translateZ(50px);
+     */
+     /* transform: perspective(200px) rotate(50deg); */
+
+     transform: rotate(50deg);
+     
+}
+
+
+
+
+
+    
+
+/* rotate
+
+scale 
+
+skew
+
+translate
+*/
+
+
+
+
+
+

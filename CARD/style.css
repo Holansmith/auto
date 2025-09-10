@@ -1,0 +1,47 @@
+
+body{
+    background-size: contain;
+    size: 50%;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.bg-image {
+    justify-content: center;
+    justify-items: center;
+    height: 15rem;
+    padding-top: 20px;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    
+    padding-right: 60px;    
+}
+
+
+.details .details-1{
+    color: blue;
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    padding-left: 5px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.details-2{
+    display: flex;
+    height: 2rem;
+    
+}
+
+
+
